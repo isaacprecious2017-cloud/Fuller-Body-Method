@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Activate Your Account | The Fuller-Body Method
+    </title>
+
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="activate.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<main class="activate-page">
+
+
+    <section class="activate-wrapper">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <img
+                src="images/logo.png"
+                alt="The Fuller-Body Method"
+            >
+
+        </a>
+
+
+
+        <!-- CARD -->
+
+        <div class="activate-card">
+
+
+            <div class="step-icon">
+
+                <span>
+                    ✓
+                </span>
+
+            </div>
+
+
+            <span class="eyebrow">
+                YOUR PURCHASE IS CONFIRMED
+            </span>
+
+
+            <h1>
+
+                Secure your
+                <span>member account.</span>
+
+            </h1>
+
+
+            <p class="intro">
+
+                Your payment was successful.
+
+                Create a password below so you can return
+                anytime and access your private Fuller-Body
+                Method library.
+
+            </p>
+
+
+
+            <!-- PURCHASE EMAIL -->
+
+            <div class="email-notice">
+
+                <div class="email-icon">
+                    ✉
+                </div>
+
+                <div>
+
+                    <strong>
+                        Use the email you paid with
+                    </strong>
+
+                    <p>
+                        This connects your account to your purchase.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FORM -->
+
+            <form
+                id="activateForm"
+                autocomplete="on"
+            >
+
+
+                <div class="form-group">
+
+                    <label for="activateName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="activateName"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="activateEmail">
+                        Purchase Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="activateEmail"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <small>
+                        Enter the same email you used during payment.
+                    </small>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="activatePassword">
+                        Create Password
+                    </label>
+
+
+                    <div class="password-field">
+
+                        <input
+                            type="password"
+                            id="activatePassword"
+                            name="password"
+                            placeholder="Create a password"
+                            minlength="6"
+                            autocomplete="new-password"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="show-password"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+
+                    <div class="password-strength">
+
+                        <div
+                            id="strengthBar"
+                            class="strength-bar"
+                        ></div>
+
+                    </div>
+
+
+                    <small id="passwordHint">
+                        Use at least 6 characters.
+                    </small>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+
+                    <div class="password-field">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Enter your password again"
+                            autocomplete="new-password"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            id="toggleConfirmPassword"
+                            class="show-password"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TERMS -->
+
+                <label class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="agreeTerms"
+                        required
+                    >
+
+                    <span>
+
+                        I understand that my account gives me
+                        private access to the digital resources
+                        included with my purchase.
+
+                    </span>
+
+                </label>
+
+
+
+                <button
+                    type="submit"
+                    id="activateButton"
+                    class="activate-button"
+                >
+
+                    Create My Account
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <p
+                    id="activateMessage"
+                    class="form-message"
+                ></p>
+
+
+            </form>
+
+
+
+            <!-- WHAT HAPPENS -->
+
+            <div class="next-step">
+
+                <div class="next-line"></div>
+
+
+                <h3>
+                    What happens next?
+                </h3>
+
+
+                <div class="next-items">
+
+                    <div class="next-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <p>
+                            Your account is created securely.
+                        </p>
+
+                    </div>
+
+
+                    <div class="next-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <p>
+                            You'll enter your private dashboard.
+                        </p>
+
+                    </div>
+
+
+                    <div class="next-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <p>
+                            Your purchased resources will be available
+                            to read online.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LOGIN -->
+
+            <div class="login-link">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Log in
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <p class="secure-note">
+
+            🔒 Your account information is protected.
+
+        </p>
+
+
+    </section>
+
+
+</main>
+
+
+<script src="activate.js"></script>
+
+</body>
+
+</html>

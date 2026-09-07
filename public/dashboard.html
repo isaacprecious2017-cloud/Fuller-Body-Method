@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        My Dashboard | The Fuller-Body Method
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     MOBILE OVERLAY
+========================================= -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay"
+></div>
+
+
+
+<!-- =========================================
+     SIDEBAR
+========================================= -->
+
+<aside
+    class="sidebar"
+    id="sidebar"
+>
+
+    <div class="sidebar-top">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="dashboard-logo"
+        >
+
+            <img
+                src="images/logo.png"
+                alt="The Fuller-Body Method"
+            >
+
+        </a>
+
+
+
+        <!-- MEMBER -->
+
+        <div class="member-mini">
+
+            <div class="member-avatar">
+                <span id="memberInitial">
+                    M
+                </span>
+            </div>
+
+            <div>
+
+                <strong id="sidebarName">
+                    Member
+                </strong>
+
+                <span>
+                    Private Member
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="dashboard-menu">
+
+            <a
+                href="#overview"
+                class="menu-link active"
+            >
+
+                <span class="menu-icon">
+                    ◉
+                </span>
+
+                Overview
+
+            </a>
+
+
+            <a
+                href="#library"
+                class="menu-link"
+            >
+
+                <span class="menu-icon">
+                    ▣
+                </span>
+
+                My Library
+
+            </a>
+
+
+            <a
+                href="#community"
+                class="menu-link"
+            >
+
+                <span class="menu-icon">
+                    ♡
+                </span>
+
+                Community
+
+            </a>
+
+
+            <a
+                href="#feedback"
+                class="menu-link"
+            >
+
+                <span class="menu-icon">
+                    ★
+                </span>
+
+                My Feedback
+
+            </a>
+
+
+            <a
+                href="#testimonial"
+                class="menu-link"
+            >
+
+                <span class="menu-icon">
+                    ✦
+                </span>
+
+                Share My Story
+
+            </a>
+
+        </nav>
+
+    </div>
+
+
+
+    <!-- SIDEBAR BOTTOM -->
+
+    <div class="sidebar-bottom">
+
+        <a
+            href="index.html"
+            class="website-link"
+        >
+
+            ← Visit Website
+
+        </a>
+
+
+        <button
+            id="logoutButton"
+            class="logout-button"
+        >
+
+            <span>
+                ↪
+            </span>
+
+            Logout
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main class="dashboard-main">
+
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+
+        <div class="topbar-right">
+
+            <div class="topbar-status">
+
+                <span class="status-dot"></span>
+
+                Member account
+
+            </div>
+
+
+            <div class="topbar-avatar">
+
+                <span id="topbarInitial">
+                    M
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         OVERVIEW
+    ====================================== -->
+
+    <section
+        id="overview"
+        class="dashboard-content"
+    >
+
+
+        <div class="welcome-area">
+
+            <div>
+
+                <span class="eyebrow">
+                    PRIVATE MEMBER AREA
+                </span>
+
+
+                <h1>
+
+                    Welcome back,
+
+                    <span id="welcomeName">
+                        Sister
+                    </span>.
+
+                </h1>
+
+
+                <p>
+                    Everything included with your purchase
+                    is waiting for you below.
+                </p>
+
+            </div>
+
+
+            <div class="welcome-badge">
+
+                <span>
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Access active
+                    </strong>
+
+                    <small>
+                        Your member library is ready
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- STATS -->
+
+        <div class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ▣
+                </div>
+
+                <div>
+
+                    <span>
+                        Your Resources
+                    </span>
+
+                    <strong id="resourceCount">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon gold">
+                    ★
+                </div>
+
+                <div>
+
+                    <span>
+                        Member Status
+                    </span>
+
+                    <strong>
+                        Active
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon rose">
+                    ♡
+                </div>
+
+                <div>
+
+                    <span>
+                        Community
+                    </span>
+
+                    <strong>
+                        Connected
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================
+             LIBRARY
+        ====================================== -->
+
+        <section
+            id="library"
+            class="dashboard-section"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        YOUR LIBRARY
+                    </span>
+
+                    <h2>
+                        Your private resources
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="libraryGrid"
+                class="library-grid"
+            >
+
+                <div class="loading-card">
+
+                    <div class="loading-spinner"></div>
+
+                    <p>
+                        Loading your resources...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             COMMUNITY
+        ====================================== -->
+
+        <section
+            id="community"
+            class="dashboard-section"
+        >
+
+            <div class="community-panel">
+
+
+                <div class="community-content">
+
+                    <span class="eyebrow light">
+                        MEMBER COMMUNITY
+                    </span>
+
+
+                    <h2>
+                        You're not doing this alone.
+                    </h2>
+
+
+                    <p>
+                        Join the Fuller-Body Method community
+                        on Telegram for updates, conversations,
+                        encouragement and useful information.
+                    </p>
+
+
+                    <div class="community-buttons">
+
+                        </a>
+
+
+                        <a
+                            id="telegramGroup"
+                            href="https://t.me/+c1REV198pt4yZmE0"
+                            target="_blank"
+                            rel="noopener"
+                            class="telegram-button secondary"
+                        >
+
+                            <span>
+                                👥
+                            </span>
+
+                            Telegram Group
+
+                            <b>
+                                →
+                            </b>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="community-decoration">
+
+                    <div class="community-circle">
+                        ♡
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             FEEDBACK
+        ====================================== -->
+
+        <section
+            id="feedback"
+            class="dashboard-section"
+        >
+
+            <div class="section-heading centered">
+
+                <span class="eyebrow">
+                    YOUR EXPERIENCE
+                </span>
+
+                <h2>
+                    How are you finding the guide?
+                </h2>
+
+                <p>
+                    Your honest feedback helps us improve
+                    the Fuller-Body Method.
+                </p>
+
+            </div>
+
+
+            <div class="feedback-card">
+
+
+                <form id="feedbackForm">
+
+
+                    <div class="rating-area">
+
+                        <label>
+                            Rate your experience
+                        </label>
+
+
+                        <div
+                            class="star-rating"
+                            id="starRating"
+                        >
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="1"
+                                aria-label="1 star"
+                            >
+                                ★
+                            </button>
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="2"
+                                aria-label="2 stars"
+                            >
+                                ★
+                            </button>
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="3"
+                                aria-label="3 stars"
+                            >
+                                ★
+                            </button>
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="4"
+                                aria-label="4 stars"
+                            >
+                                ★
+                            </button>
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="5"
+                                aria-label="5 stars"
+                            >
+                                ★
+                            </button>
+
+                        </div>
+
+                        <input
+                            type="hidden"
+                            id="rating"
+                        >
+
+                        <span
+                            id="ratingText"
+                            class="rating-text"
+                        >
+                            Select a rating
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="feedbackMessage">
+                            Your feedback
+                        </label>
+
+                        <textarea
+                            id="feedbackMessage"
+                            placeholder="Tell us what you liked, what helped you, or what we could improve..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+
+                        Submit Feedback
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <p
+                        id="feedbackResult"
+                        class="form-result"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             TESTIMONIAL
+        ====================================== -->
+
+        <section
+            id="testimonial"
+            class="dashboard-section testimonial-section"
+        >
+
+
+            <div class="testimonial-layout">
+
+
+                <div class="testimonial-intro">
+
+                    <span class="eyebrow">
+                        SHARE YOUR STORY
+                    </span>
+
+
+                    <h2>
+                        Your experience could
+                        encourage another woman.
+                    </h2>
+
+
+                    <p>
+                        If the Fuller-Body Method has been
+                        helpful to you, you can share your
+                        experience with other women.
+                    </p>
+
+
+                    <div class="testimonial-note">
+
+                        <span>
+                            ✦
+                        </span>
+
+                        <p>
+                            Testimonials are reviewed before
+                            appearing publicly on our website.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="testimonial-card">
+
+                    <form
+                        id="testimonialForm"
+                        enctype="multipart/form-data"
+                    >
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-field">
+
+                                <label for="testimonialName">
+                                    Your name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="testimonialName"
+                                    placeholder="Your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="testimonialLocation">
+                                    Location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="testimonialLocation"
+                                    placeholder="e.g. Abuja"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-field">
+
+                            <label for="testimonialRating">
+                                Your rating
+                            </label>
+
+                            <select
+                                id="testimonialRating"
+                                required
+                            >
+
+                                <option value="">
+                                    Select your rating
+                                </option>
+
+                                <option value="5">
+                                    ★★★★★ — Excellent
+                                </option>
+
+                                <option value="4">
+                                    ★★★★☆ — Very good
+                                </option>
+
+                                <option value="3">
+                                    ★★★☆☆ — Good
+                                </option>
+
+                                <option value="2">
+                                    ★★☆☆☆ — Fair
+                                </option>
+
+                                <option value="1">
+                                    ★☆☆☆☆ — Needs improvement
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="form-field">
+
+                            <label for="testimonialMessage">
+                                Your story
+                            </label>
+
+                            <textarea
+                                id="testimonialMessage"
+                                placeholder="Tell us about your experience..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+
+                        <!-- PHOTO -->
+
+                        <div class="photo-upload-area">
+
+                            <label>
+                                Add your picture
+                            </label>
+
+
+                            <div class="photo-upload">
+
+                                <span class="upload-icon">
+                                    📷
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        Upload a photo
+                                    </strong>
+
+                                    <small>
+                                        JPG, PNG or WEBP
+                                    </small>
+
+                                </div>
+
+
+                                <input
+                                    type="file"
+                                    id="testimonialPhoto"
+                                    accept="image/jpeg,image/png,image/webp"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <label class="permission">
+
+                            <input
+                                type="checkbox"
+                                id="testimonialPermission"
+                            >
+
+                            <span>
+                                I give permission for my testimonial
+                                and picture to appear on the
+                                Fuller-Body Method website.
+                            </span>
+
+                        </label>
+
+
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+
+                            Submit My Testimonial
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+
+                        <p
+                            id="testimonialResult"
+                            class="form-result"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="dashboard-footer">
+
+            <div>
+
+                <strong>
+                    The Fuller-Body Method
+                </strong>
+
+                <p>
+                    Your private member library.
+                </p>
+
+            </div>
+
+
+            <span>
+                © <span id="currentYear"></span>
+                The Fuller-Body Method
+            </span>
+
+        </footer>
+
+
+    </section>
+
+</main>
+
+
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

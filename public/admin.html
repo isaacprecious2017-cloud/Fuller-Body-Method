@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Admin Dashboard | Fuller-Body Method
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="admin.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     ADMIN LOGIN
+========================================= -->
+
+<section
+    id="loginPanel"
+    class="login-page"
+>
+
+    <div class="login-card">
+
+        <div class="login-logo">
+
+            <img
+                src="images/logo.png"
+                alt="The Fuller-Body Method"
+            >
+
+        </div>
+
+
+        <span class="eyebrow">
+            PRIVATE ADMIN AREA
+        </span>
+
+
+        <h1>
+            Welcome back.
+        </h1>
+
+
+        <p>
+            Sign in to manage your Fuller-Body Method
+            customer library.
+        </p>
+
+
+        <form id="adminLoginForm">
+
+            <div class="form-group">
+
+                <label for="adminPassword">
+                    Admin Password
+                </label>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Enter admin password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="primary-button"
+                id="adminLoginButton"
+            >
+
+                Enter Admin Dashboard
+                <span>→</span>
+
+            </button>
+
+
+            <p
+                id="adminLoginMessage"
+                class="form-message"
+            ></p>
+
+        </form>
+
+
+        <a
+            href="index.html"
+            class="back-home"
+        >
+            ← Back to website
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ADMIN DASHBOARD
+========================================= -->
+
+<div
+    id="adminDashboard"
+    class="admin-layout"
+    style="display:none;"
+>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <img
+                src="images/logo.png"
+                alt="The Fuller-Body Method"
+            >
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a
+                href="#overview"
+                class="nav-item active"
+            >
+
+                <span>⌂</span>
+
+                Overview
+
+            </a>
+
+
+            <a
+                href="#resources"
+                class="nav-item"
+            >
+
+                <span>▣</span>
+
+                Resources
+
+            </a>
+
+
+            <a
+                href="#feedback"
+                class="nav-item"
+            >
+
+                <span>★</span>
+
+                Feedback
+
+            </a>
+
+
+            <a
+                href="#testimonials"
+                class="nav-item"
+            >
+
+                <span>♡</span>
+
+                Testimonials
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a
+                href="index.html"
+                target="_blank"
+                class="view-site"
+            >
+                View Website →
+            </a>
+
+
+            <button
+                id="adminLogout"
+                class="logout-button"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="admin-main">
+
+
+        <header class="mobile-header">
+
+            <img
+                src="images/logo.png"
+                alt="The Fuller-Body Method"
+            >
+
+            <button id="mobileLogout">
+                Logout
+            </button>
+
+        </header>
+
+
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div>
+
+                <span class="eyebrow">
+                    ADMIN CONTROL CENTER
+                </span>
+
+                <h1>
+                    Fuller-Body Library
+                </h1>
+
+                <p>
+                    Manage your customer resources,
+                    feedback and testimonials.
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+             OVERVIEW
+        ========================================= -->
+
+        <section
+            id="overview"
+            class="admin-section"
+        >
+
+            <div class="section-title">
+
+                <span class="eyebrow">
+                    OVERVIEW
+                </span>
+
+                <h2>
+                    Your dashboard
+                </h2>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ▣
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Resources
+                        </span>
+
+                        <strong id="resourceCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Feedback
+                        </span>
+
+                        <strong id="feedbackCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ♡
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Testimonials
+                        </span>
+
+                        <strong id="testimonialCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card highlight">
+
+                    <div class="stat-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Approved
+                        </span>
+
+                        <strong id="approvedCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+       <!-- =========================================
+     RESOURCES
+========================================= -->
+
+<section
+    id="resources"
+    class="admin-section"
+>
+
+    <div class="section-title">
+
+        <span class="eyebrow">
+            PRIVATE CUSTOMER LIBRARY
+        </span>
+
+        <h2>
+            Manage resources
+        </h2>
+
+        <p>
+            Upload PDFs, images and videos, or add an
+            external link for your customers.
+        </p>
+
+    </div>
+
+
+    <!-- ADD RESOURCE -->
+
+    <div class="admin-card resource-create-card">
+
+        <div class="card-heading">
+
+            <div class="card-icon">
+                +
+            </div>
+
+            <div>
+
+                <h3>
+                    Add a new resource
+                </h3>
+
+                <p>
+                    Choose what you want your customers
+                    to access from their private dashboard.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form
+            id="resourceForm"
+            enctype="multipart/form-data"
+        >
+
+
+            <!-- TITLE -->
+
+            <div class="form-group">
+
+                <label for="resourceTitle">
+                    Resource title
+                </label>
+
+                <input
+                    type="text"
+                    id="resourceTitle"
+                    name="title"
+                    placeholder="e.g. The Fuller-Body Method"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- RESOURCE TYPE -->
+
+            <div class="form-group">
+
+                <label for="resourceType">
+                    What are you adding?
+                </label>
+
+                <select
+                    id="resourceType"
+                    name="type"
+                    required
+                >
+
+                    <option value="pdf">
+                        📕 PDF Document
+                    </option>
+
+                    <option value="image">
+                        🖼️ Image
+                    </option>
+
+                    <option value="video">
+                        🎥 Video
+                    </option>
+
+                    <option value="link">
+                        🔗 External Link
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- FILE UPLOAD -->
+
+            <div
+                id="fileGroup"
+                class="form-group"
+            >
+
+                <label for="resourceFile">
+                    Select file
+                </label>
+
+
+                <div class="file-upload-box">
+
+                    <input
+                        type="file"
+                        id="resourceFile"
+                        name="file"
+                    >
+
+
+                    <div class="file-upload-content">
+
+                        <span
+                            id="fileIcon"
+                            class="file-icon"
+                        >
+                            📕
+                        </span>
+
+                        <strong
+                            id="fileTitle"
+                        >
+                            Choose a PDF
+                        </strong>
+
+                        <span
+                            id="fileDescription"
+                        >
+                            PDF files only
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <small id="fileHelp">
+                    Upload the file customers should access.
+                </small>
+
+            </div>
+
+
+
+            <!-- EXTERNAL LINK -->
+
+            <div
+                id="urlGroup"
+                class="form-group"
+                style="display:none;"
+            >
+
+                <label for="resourceUrl">
+                    External resource link
+                </label>
+
+                <input
+                    type="url"
+                    id="resourceUrl"
+                    name="url"
+                    placeholder="https://example.com/resource"
+                >
+
+                <small>
+                    Use this for YouTube, Google Drive,
+                    Vimeo or another external resource.
+                </small>
+
+            </div>
+
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="primary-button resource-submit"
+                id="resourceButton"
+            >
+
+                Add Resource
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+            <p
+                id="resourceMessage"
+                class="form-message"
+            ></p>
+
+
+        </form>
+
+    </div>
+
+
+
+    <!-- CURRENT RESOURCES -->
+
+    <div class="admin-card">
+
+        <div class="card-heading">
+
+            <div>
+
+                <h3>
+                    Current resources
+                </h3>
+
+                <p>
+                    These are the resources currently
+                    available in the private customer library.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="resourceList"
+            class="resource-list"
+        ></div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =========================================
+             FEEDBACK
+        ========================================= -->
+
+        <section
+            id="feedback"
+            class="admin-section"
+        >
+
+            <div class="section-title">
+
+                <span class="eyebrow">
+                    CUSTOMER FEEDBACK
+                </span>
+
+                <h2>
+                    Customer feedback
+                </h2>
+
+            </div>
+
+
+            <div
+                id="feedbackList"
+                class="feedback-list"
+            ></div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             TESTIMONIALS
+        ========================================= -->
+
+        <section
+            id="testimonials"
+            class="admin-section"
+        >
+
+            <div class="section-title">
+
+                <span class="eyebrow">
+                    TESTIMONIAL MANAGEMENT
+                </span>
+
+                <h2>
+                    Customer testimonials
+                </h2>
+
+                <p>
+                    Approve testimonials before they appear
+                    on the website.
+                </p>
+
+            </div>
+
+
+            <div
+                id="testimonialList"
+                class="testimonial-admin-list"
+            ></div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+:root {
+
+    --cream: #f7f2ea;
+    --white: #ffffff;
+
+    --wine: #68334d;
+    --wine-dark: #52263d;
+
+    --gold: #b98a42;
+
+    --dark: #29313b;
+    --text: #666;
+
+    --border: #e5ddd3;
+
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+
+    background:
+        var(--cream);
+
+    color:
+        var(--dark);
+
+}
+
+
+.library-header {
+
+    padding:
+        20px 0;
+
+    background:
+        rgba(255,255,255,.9);
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+}
+
+
+.library-container {
+
+    width:
+        min(
+            1100px,
+            calc(100% - 40px)
+        );
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+}
+
+
+.library-logo {
+
+    color:
+        var(--wine);
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        1.2rem;
+
+    font-weight:
+        700;
+
+}
+
+
+.library-header span {
+
+    color:
+        #777;
+
+    font-size:
+        .9rem;
+
+}
+
+
+.library-page {
+
+    width:
+        min(
+            1100px,
+            calc(100% - 40px)
+        );
+
+    margin:
+        auto;
+
+    padding:
+        70px 0 100px;
+
+}
+
+
+.library-intro {
+
+    margin-bottom:
+        40px;
+
+}
+
+
+.library-intro > span {
+
+    color:
+        var(--gold);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        .18em;
+
+}
+
+
+.library-intro h1 {
+
+    margin:
+        10px 0;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            2.2rem,
+            5vw,
+            3.8rem
+        );
+
+}
+
+
+.library-intro p {
+
+    color:
+        var(--text);
+
+}
+
+
+.pdf-library {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(
+                260px,
+                1fr
+            )
+        );
+
+    gap:
+        20px;
+
+}
+
+
+.pdf-card {
+
+    padding:
+        25px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        18px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,.05);
+
+}
+
+
+.pdf-icon {
+
+    width:
+        55px;
+
+    height:
+        55px;
+
+    margin-bottom:
+        20px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        12px;
+
+    background:
+        #f1e7d9;
+
+    color:
+        var(--wine);
+
+    font-weight:
+        800;
+
+}
+
+
+.pdf-card h2 {
+
+    margin-bottom:
+        8px;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        1.25rem;
+
+    word-break:
+        break-word;
+
+}
+
+
+.pdf-card p {
+
+    margin-bottom:
+        20px;
+
+    color:
+        #888;
+
+    font-size:
+        .85rem;
+
+}
+
+
+.read-button {
+
+    width:
+        100%;
+
+    min-height:
+        50px;
+
+    border:
+        none;
+
+    border-radius:
+        9px;
+
+    background:
+        var(--wine);
+
+    color:
+        white;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+}
+
+
+.read-button:hover {
+
+    background:
+        var(--wine-dark);
+
+}
+
+
+.library-loading {
+
+    grid-column:
+        1 / -1;
+
+    padding:
+        50px;
+
+    text-align:
+        center;
+
+    color:
+        #888;
+
+}
+
+
+@media(max-width:600px) {
+
+    .library-page {
+
+        padding:
+            50px 0 70px;
+
+    }
+
+    .library-container {
+
+        width:
+            calc(100% - 30px);
+
+    }
+
+}

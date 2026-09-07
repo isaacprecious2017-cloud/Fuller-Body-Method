@@ -1,0 +1,1012 @@
+:root {
+
+    --plum: #5b2948;
+    --plum-dark: #351728;
+    --burgundy: #7a3155;
+
+    --gold: #c99a4a;
+    --gold-light: #e7c98d;
+
+    --cream: #fffaf4;
+    --cream-dark: #f7eee5;
+
+    --pink: #f8e9ee;
+
+    --white: #ffffff;
+
+    --text: #282329;
+    --soft: #716970;
+
+    --border: #eadde1;
+
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior:
+        smooth;
+
+}
+
+
+body {
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    color:
+        var(--text);
+
+    background:
+        var(--cream);
+
+}
+
+
+.activate-page {
+
+    min-height:
+        100vh;
+
+    padding:
+        45px 20px 60px;
+
+    background:
+
+        radial-gradient(
+            circle at 5% 5%,
+            rgba(201,154,74,.14),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 95% 90%,
+            rgba(248,233,238,.85),
+            transparent 35%
+        ),
+
+        var(--cream);
+
+}
+
+
+.activate-wrapper {
+
+    width:
+        100%;
+
+    max-width:
+        590px;
+
+    margin:
+        auto;
+
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand {
+
+    display:
+        block;
+
+    width:
+        160px;
+
+    margin:
+        0 auto 35px;
+
+}
+
+
+.brand img {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.activate-card {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    padding:
+        48px 48px 42px;
+
+    background:
+        rgba(255,255,255,.98);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        28px;
+
+    box-shadow:
+        0 30px 80px
+        rgba(53,23,40,.12);
+
+}
+
+
+.activate-card::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    width:
+        100%;
+
+    height:
+        5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--plum),
+            var(--gold),
+            var(--burgundy)
+        );
+
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.step-icon {
+
+    width:
+        62px;
+
+    height:
+        62px;
+
+    margin:
+        0 auto 20px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        #f4e8ee;
+
+}
+
+
+.step-icon span {
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--plum);
+
+    color:
+        white;
+
+    font-size:
+        1rem;
+
+    font-weight:
+        800;
+
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.eyebrow {
+
+    display:
+        block;
+
+    margin-bottom:
+        12px;
+
+    text-align:
+        center;
+
+    color:
+        var(--gold);
+
+    font-size:
+        .65rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        .18em;
+
+}
+
+
+.activate-card h1 {
+
+    margin-bottom:
+        17px;
+
+    color:
+        var(--plum-dark);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(2.3rem,6vw,3.3rem);
+
+    line-height:
+        1.08;
+
+    text-align:
+        center;
+
+}
+
+
+.activate-card h1 span {
+
+    display:
+        block;
+
+    color:
+        var(--burgundy);
+
+}
+
+
+.intro {
+
+    max-width:
+        500px;
+
+    margin:
+        0 auto 28px;
+
+    color:
+        var(--soft);
+
+    font-size:
+        .9rem;
+
+    line-height:
+        1.8;
+
+    text-align:
+        center;
+
+}
+
+
+/* =========================================
+   EMAIL NOTICE
+========================================= */
+
+.email-notice {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        13px;
+
+    margin-bottom:
+        28px;
+
+    padding:
+        16px;
+
+    border:
+        1px solid #eadde1;
+
+    border-radius:
+        14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff9ef,
+            #fff5f8
+        );
+
+}
+
+
+.email-icon {
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    flex:
+        0 0 42px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        11px;
+
+    background:
+        white;
+
+}
+
+
+.email-notice strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        3px;
+
+    color:
+        var(--plum);
+
+    font-size:
+        .78rem;
+
+}
+
+
+.email-notice p {
+
+    color:
+        var(--soft);
+
+    font-size:
+        .72rem;
+
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+
+    margin-bottom:
+        19px;
+
+}
+
+
+.form-group label {
+
+    display:
+        block;
+
+    margin-bottom:
+        7px;
+
+    color:
+        var(--plum-dark);
+
+    font-size:
+        .78rem;
+
+    font-weight:
+        800;
+
+}
+
+
+.form-group input {
+
+    width:
+        100%;
+
+    height:
+        52px;
+
+    padding:
+        0 15px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        11px;
+
+    outline:
+        none;
+
+    background:
+        white;
+
+    color:
+        var(--text);
+
+    font-family:
+        inherit;
+
+    font-size:
+        .85rem;
+
+    transition:
+        .2s ease;
+
+}
+
+
+.form-group input:focus {
+
+    border-color:
+        var(--burgundy);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(122,49,85,.08);
+
+}
+
+
+.form-group small {
+
+    display:
+        block;
+
+    margin-top:
+        6px;
+
+    color:
+        #8d858a;
+
+    font-size:
+        .68rem;
+
+}
+
+
+/* =========================================
+   PASSWORD
+========================================= */
+
+.password-field {
+
+    position:
+        relative;
+
+}
+
+
+.password-field input {
+
+    padding-right:
+        70px;
+
+}
+
+
+.show-password {
+
+    position:
+        absolute;
+
+    top:
+        50%;
+
+    right:
+        12px;
+
+    transform:
+        translateY(-50%);
+
+    border:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        var(--burgundy);
+
+    font-size:
+        .7rem;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+}
+
+
+.password-strength {
+
+    width:
+        100%;
+
+    height:
+        4px;
+
+    margin-top:
+        8px;
+
+    overflow:
+        hidden;
+
+    border-radius:
+        10px;
+
+    background:
+        #eee5e8;
+
+}
+
+
+.strength-bar {
+
+    width:
+        0;
+
+    height:
+        100%;
+
+    border-radius:
+        inherit;
+
+    transition:
+        .25s ease;
+
+}
+
+
+/* =========================================
+   TERMS
+========================================= */
+
+.terms {
+
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    gap:
+        9px;
+
+    margin:
+        22px 0;
+
+    color:
+        var(--soft);
+
+    font-size:
+        .7rem;
+
+    line-height:
+        1.5;
+
+    cursor:
+        pointer;
+
+}
+
+
+.terms input {
+
+    flex:
+        0 0 auto;
+
+    width:
+        16px;
+
+    height:
+        16px;
+
+    margin-top:
+        1px;
+
+    accent-color:
+        var(--plum);
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.activate-button {
+
+    width:
+        100%;
+
+    min-height:
+        58px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        10px;
+
+    border:
+        none;
+
+    border-radius:
+        12px;
+
+    background:
+        var(--plum);
+
+    color:
+        white;
+
+    font-family:
+        inherit;
+
+    font-size:
+        .9rem;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+    transition:
+        .25s ease;
+
+}
+
+
+.activate-button:hover {
+
+    background:
+        var(--burgundy);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 28px
+        rgba(91,41,72,.2);
+
+}
+
+
+.activate-button:disabled {
+
+    opacity:
+        .65;
+
+    cursor:
+        not-allowed;
+
+    transform:
+        none;
+
+}
+
+
+.form-message {
+
+    min-height:
+        20px;
+
+    margin-top:
+        12px;
+
+    text-align:
+        center;
+
+    color:
+        var(--burgundy);
+
+    font-size:
+        .76rem;
+
+}
+
+
+/* =========================================
+   NEXT STEPS
+========================================= */
+
+.next-step {
+
+    margin-top:
+        35px;
+
+    padding-top:
+        27px;
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+
+.next-step h3 {
+
+    margin-bottom:
+        18px;
+
+    color:
+        var(--plum);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        1.15rem;
+
+    text-align:
+        center;
+
+}
+
+
+.next-items {
+
+    display:
+        grid;
+
+    gap:
+        11px;
+
+}
+
+
+.next-item {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+}
+
+
+.next-item span {
+
+    width:
+        31px;
+
+    height:
+        31px;
+
+    flex:
+        0 0 31px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        #f7eaf0;
+
+    color:
+        var(--burgundy);
+
+    font-size:
+        .62rem;
+
+    font-weight:
+        800;
+
+}
+
+
+.next-item p {
+
+    color:
+        var(--soft);
+
+    font-size:
+        .74rem;
+
+    line-height:
+        1.5;
+
+}
+
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.login-link {
+
+    margin-top:
+        30px;
+
+    text-align:
+        center;
+
+    color:
+        var(--soft);
+
+    font-size:
+        .75rem;
+
+}
+
+
+.login-link a {
+
+    margin-left:
+        4px;
+
+    color:
+        var(--burgundy);
+
+    font-weight:
+        800;
+
+    text-decoration:
+        none;
+
+}
+
+
+.secure-note {
+
+    margin-top:
+        18px;
+
+    text-align:
+        center;
+
+    color:
+        #9b9398;
+
+    font-size:
+        .68rem;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:600px) {
+
+    .activate-page {
+
+        padding:
+            25px 14px 40px;
+
+    }
+
+
+    .brand {
+
+        width:
+            135px;
+
+        margin-bottom:
+            25px;
+
+    }
+
+
+    .activate-card {
+
+        padding:
+            40px 21px 32px;
+
+        border-radius:
+            22px;
+
+    }
+
+
+    .activate-card h1 {
+
+        font-size:
+            2.25rem;
+
+    }
+
+
+    .email-notice {
+
+        align-items:
+            flex-start;
+
+    }
+
+}

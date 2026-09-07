@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Reading | Fuller-Body Method</title>
+
+<link
+    rel="stylesheet"
+    href="reader.css"
+>
+
+</head>
+
+
+<body>
+
+<header class="reader-header">
+
+    <a href="dashboard.html">
+        ← My Library
+    </a>
+
+
+    <strong id="readerTitle">
+        Loading...
+    </strong>
+
+
+    <span>
+        Private Reader
+    </span>
+
+</header>
+
+
+<main class="reader-page">
+
+    <div
+        id="readerLoading"
+        class="reader-loading"
+    >
+        Loading your guide...
+    </div>
+
+
+    <!--
+        The actual viewer (iframe for PDF, img for image,
+        video for video) is injected here by reader.js
+        depending on the resource type.
+    -->
+
+    <div
+        id="readerContent"
+        class="reader-content"
+    ></div>
+
+
+    <div
+        id="readerError"
+        class="reader-error"
+    ></div>
+
+</main>
+
+
+<script src="reader.js"></script>
+
+</body>
+
+</html>
